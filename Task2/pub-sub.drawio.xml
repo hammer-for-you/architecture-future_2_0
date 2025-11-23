@@ -1,0 +1,52 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Страница-1" id="_gaME83IVS-AG-IE96-P">
+    <mxGraphModel dx="1042" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Ef5D5nBRdoq2jC3L1v0I-1" target="Ef5D5nBRdoq2jC3L1v0I-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-1" value="Медицинский&lt;br&gt;домен" style="html=1;dashed=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="40" y="155" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Ef5D5nBRdoq2jC3L1v0I-3" target="Ef5D5nBRdoq2jC3L1v0I-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-3" value="Публикация&lt;br&gt;данных" style="ellipse;whiteSpace=wrap;html=1;dashed=0;" parent="1" vertex="1">
+          <mxGeometry x="230" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Ef5D5nBRdoq2jC3L1v0I-9" target="Ef5D5nBRdoq2jC3L1v0I-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Ef5D5nBRdoq2jC3L1v0I-9" target="Ef5D5nBRdoq2jC3L1v0I-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-9" value="Шина данных" style="whiteSpace=wrap;html=1;dashed=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Ef5D5nBRdoq2jC3L1v0I-11" target="Ef5D5nBRdoq2jC3L1v0I-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-11" value="Получение медицинских данных для анализа" style="ellipse;whiteSpace=wrap;html=1;dashed=0;" parent="1" vertex="1">
+          <mxGeometry x="390" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-13" value="ИИ-домен" style="whiteSpace=wrap;html=1;dashed=0;" parent="1" vertex="1">
+          <mxGeometry x="370" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Ef5D5nBRdoq2jC3L1v0I-15" target="Ef5D5nBRdoq2jC3L1v0I-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-15" value="Сохранение&lt;br&gt;данных&lt;br&gt;в DLH" style="ellipse;whiteSpace=wrap;html=1;dashed=0;" parent="1" vertex="1">
+          <mxGeometry x="590" y="140" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-17" value="DLH" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;dashed=0;" parent="1" vertex="1">
+          <mxGeometry x="570" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ef5D5nBRdoq2jC3L1v0I-19" value="Медицинский домен публикует данные, ИИ-домен использует нужные ему данные для анализа" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="50" width="570" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
