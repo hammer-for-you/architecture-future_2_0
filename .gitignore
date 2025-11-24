@@ -1,1 +1,4 @@
 *.bkp
+.techradar
+build
+node_modules
