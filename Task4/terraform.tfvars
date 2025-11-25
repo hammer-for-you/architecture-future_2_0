@@ -1,0 +1,12 @@
+service_account_id = "ajesjdl1pt4g2p7r5blc"
+pg_disk_size = 20
+pg_disk_size_limit = 40
+pg_emergency_usage_threshold = 90
+pg_planned_usage_threshold = 70
+aifrlow_admin_password = "airFlow-aDmin123!"
+clickhouse_disk_size = 20
+kafka_disk_size = 20
+vm_cores = 2
+vm_memory = 4
+vm_image_id = "fd80von1v2g6rjn7oofk"
+vm_disk_size = 20

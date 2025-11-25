@@ -1,0 +1,72 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Страница-1" id="s_3QObGQgpMhE1caFUl_">
+    <mxGraphModel dx="1042" dy="634" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7pptm2VXWJ6afhpsq-2R-1" target="7pptm2VXWJ6afhpsq-2R-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-1" value="ИИ-домен" style="html=1;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="365" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7pptm2VXWJ6afhpsq-2R-2" target="7pptm2VXWJ6afhpsq-2R-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-2" value="Прямой запрос медицинских&lt;div&gt;данных&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="350" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="7pptm2VXWJ6afhpsq-2R-4" target="7pptm2VXWJ6afhpsq-2R-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="485" />
+              <mxPoint x="130" y="485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-7" value="Требуемые домену медицинские данные" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="7pptm2VXWJ6afhpsq-2R-6">
+          <mxGeometry x="-0.0206" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-4" value="DLH" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7pptm2VXWJ6afhpsq-2R-8" target="7pptm2VXWJ6afhpsq-2R-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-8" value="ИИ-домен" style="html=1;dashed=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="105" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="7pptm2VXWJ6afhpsq-2R-9" target="7pptm2VXWJ6afhpsq-2R-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-9" value="Получение медицинского&lt;br&gt;Data Product" style="ellipse;whiteSpace=wrap;html=1;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="90" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="7pptm2VXWJ6afhpsq-2R-11" target="7pptm2VXWJ6afhpsq-2R-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="215" />
+              <mxPoint x="130" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-14" value="Медицинский Data Product" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="7pptm2VXWJ6afhpsq-2R-13">
+          <mxGeometry x="-0.0435" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-11" value="Data Mesh" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-15" value="1. Домен обращается в Data Mesh, чтобы получить спецификацию интересующих его данных и узнать, где их запросить" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="50" width="390" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="7pptm2VXWJ6afhpsq-2R-16" value="2. Домен запрашивает необходимые ему медицинские данные&amp;nbsp;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="310" width="240" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

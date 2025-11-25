@@ -1,0 +1,99 @@
+graph TB
+    subgraph Cloud_Provider[Облачный провайдер Yandex Cloud]
+        subgraph Network["Сетевые компоненты [Terraform]"]
+            VPC[VPC]
+            SubnetA[Подсеть A]
+            SG[Security Groups]
+            NAT[NAT Gateway]
+        end
+
+        subgraph Managed_Services["Управляемые сервисы [Terraform]"]
+            MK[Managed Kafka]
+            MPS[Managed PostgreSQL]
+            MCH[Managed ClickHouse]
+            MAF[Managed Airflow]
+            S3[S3-совместимое хранилище]
+        end
+
+        subgraph Infrastructure["Виртуальные машины [Terraform]"]
+            subgraph VM_DataHub["ВМ: DataHub"]
+                VM_DH[DataHub Server]
+            end
+
+            subgraph VM_IAM["ВМ: IAM"]
+                VM_KC[Keycloak]
+            end
+
+            subgraph VM_Microservices["ВМ: Микросервисы"]
+                VM_ServiceA[Микросервис A]
+                VM_Grafana[Микросервис B]
+            end
+        end
+
+        subgraph Manual_Components["Компоненты ручной настройки [Manual]"]
+            subgraph DataHub_Setup["DataHub конфигурация"]
+                DH_Ingest[Конвейеры ingestion]
+                DH_Schemas[Схемы метаданных]
+                DH_Policies[Политики доступа]
+            end
+
+            subgraph IAM_Setup["IAM конфигурация"]
+                IAM_Roles[RBAC роли]
+                IAM_Policies[Политики доступа]
+                IAM_Integrations[Интеграции с доменами]
+            end
+
+            subgraph Kafka_Setup["Kafka конфигурация"]
+                K_Topics[Топики]
+                K_Groups[Consumer группы]
+                K_Partitions[Партиции]
+            end
+
+            subgraph Airflow_Setup["Airflow конфигурация"]
+                AF_Dags[DAG-ы и пайплайны]
+                AF_Conn[Connections и Variables]
+                AF_Plugins[Кастомные плагины]
+            end
+        end
+    end
+
+%% Связи между компонентами
+    VPC --> SubnetA
+    VPC --> SG
+    VPC --> NAT
+
+    SubnetA --> VM_DataHub
+    SubnetA --> VM_Microservices
+    SubnetA --> VM_IAM
+
+    SubnetA --> Managed_Services
+
+    SG --> VM_DataHub
+    SG --> VM_IAM
+    SG --> VM_Microservices
+    SG --> Managed_Services
+
+    VM_DataHub --> DataHub_Setup
+    VM_KC --> IAM_Setup
+    MK --> Kafka_Setup
+    MAF --> Airflow_Setup
+
+%% Стили для разных типов развертывания
+    classDef terraform fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef manual fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef managed fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+
+    class Network,Infrastructure terraform
+    class Managed_Services managed
+    class Manual_Components manual
+
+%% Легенда
+subgraph Legend["Легенда развертывания"]
+L1[[Terraform]] --> L1_Desc[Инфраструктура как код]
+L2[[Manual]] --> L2_Desc[Ручная настройка]
+L3[[Managed]] --> L3_Desc[Управляемый сервис]
+end
+
+class L1,L1_Desc terraform
+class L2,L2_Desc manual
+class L3,L3_Desc managed

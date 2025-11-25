@@ -1,0 +1,10 @@
+*.bkp
+build
+Task3/tech-radar/.techradar
+Task3/tech-radar/node_modules
+Task3/tech-radar/yarn.lock
+.idea
+*.iml
+Task4/.terraform
+Task4/*.tfstate
+Task4/*.tfstate.backup

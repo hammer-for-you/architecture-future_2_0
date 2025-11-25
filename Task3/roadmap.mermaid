@@ -1,0 +1,40 @@
+gantt
+    title Роадмап цифровой трансформации компании "Будущее 2.0" (12 месяцев)
+    dateFormat  YYYY-MM
+    axisFormat  %Y-%m
+
+    section Архитектор
+    Проектирование                                          :system-design, 2026-01, 1M
+    Контроль соответствия выработанной архитектуре          :design-control, after system-design, 11M
+    Уточнение архитектуры, оперативные вопросы              :architecture-update, after system-design, 11M
+
+    section Команда домена "Финтех"
+    Проектирование и подготовка Data Product "Финтех"       :create-fintech-data-product, after system-design, 1M
+    Миграция домена "Финтех" на новую архитектуру           :migrate-fintech-to-lakehouse, after create-fintech-data-product, 3M
+    Работа с техническим долгом                             :fintech-tech-debt, after migrate-fintech-to-lakehouse, 7M
+
+    section Остальные доменные команды
+    Проектирование и подготовка Data Product для доменов    :create-other-data-products, after migrate-fintech-to-lakehouse, 1M
+    Миграция остальных доменов на новую архитектуру         :migrate-domains-to-lakehouse, after create-other-data-products, 3M
+    Работа с техническим долгом                             :domains-tech-debt, after migrate-domains-to-lakehouse, 3M
+
+    section Фронтенд-команда
+    Разработка MVP портала самообслуживания                 :create-portal-mvp, 2026-02, 4M
+    Доведение MVP до стадии production ready                :production-ready-portal, after create-portal-mvp, 6M
+    Работа с техническим долгом                             :portal-tech-debt, after production-ready-portal, 1M
+
+    section Команда управления данными
+    Создание команды                                        :create-data-governance-team, 2026-01, 1M
+    Написание регламентов управления данными                :write-governance-reglament, after create-data-governance-team, 1M
+    Контроль соблюдения регламентов                         :data-governance-control, after write-governance-reglament, 10M
+    Уточнение и доработка регламентов                       :update-reglaments, after write-governance-reglament, 10M
+
+    section Команда DevOps
+    Анализ и выбор облачной инфраструктуры                  :choose-cloud-platform, 2026-01, 1M
+    Разворачивание Data Lakehouse                           :create-data-lakehouse, after choose-cloud-platform, 2w
+    Разворачивание DataHub                                  :create-datahub, after create-data-lakehouse, 2w
+    Настройка Managed Apache Kafka                          :setup-kafka, after create-datahub, 2w
+    Настройка Managed Clickhouse                            :setup-clickhouse, after setup-kafka, 2w
+    Разворачивание и настройка ETL                          :setup-etl, after setup-clickhouse, 1M
+    Разворачивание и настройка IAM                          :create-iam, after setup-etl, 1M
+    Помощь в миграции доменов                               :domain-migration-help, 2026-03, 7M
